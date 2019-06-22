@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Code Challenge</string>
+    <string name="wall1">Parede 1</string>
+    <string name="wall2">Parede 2</string>
+    <string name="wall3">Parede 3</string>
+    <string name="wall4">Parede 4</string>
+    <string name="lengthLbl">Tamanho (Metros)</string>
+    <string name="qtDoors">Portas</string>
+    <string name="qtWindows">Janelas</string>
+    <string name="result">Você precisará de: </string>
+    <string name="height">Altura</string>
+    <string name="width">Largura</string>
+</resources>

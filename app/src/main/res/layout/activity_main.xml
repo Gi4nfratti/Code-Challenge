@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/calculator" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/wall1"
+        app:layout_constraintEnd_toStartOf="@+id/height1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/height1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/wall2"
+        app:layout_constraintEnd_toStartOf="@+id/height2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/height2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/wall3"
+        app:layout_constraintEnd_toStartOf="@+id/height3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/wall4"
+        app:layout_constraintEnd_toStartOf="@+id/height4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/lengthLbl"
+        app:layout_constraintEnd_toEndOf="@+id/height1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/qtDoors"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/qtWindows"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerDoors1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerWindows1"
+        app:layout_constraintStart_toEndOf="@+id/width1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/spinnerWindows1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDoors1"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Spinner
+        android:id="@+id/spinnerDoors2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerWindows2"
+        app:layout_constraintStart_toEndOf="@+id/width2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDoors1" />
+
+    <Spinner
+        android:id="@+id/spinnerWindows2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDoors2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerWindows1" />
+
+    <Spinner
+        android:id="@+id/spinnerDoors3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerWindows3"
+        app:layout_constraintStart_toEndOf="@+id/width3"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDoors2" />
+
+    <Spinner
+        android:id="@+id/spinnerWindows3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDoors3"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerWindows2" />
+
+    <Spinner
+        android:id="@+id/spinnerDoors4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerWindows4"
+        app:layout_constraintStart_toEndOf="@+id/width4"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDoors3" />
+
+    <Spinner
+        android:id="@+id/spinnerWindows4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDoors4"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerWindows3" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="calculateBtn"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="@+id/width4"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDoors4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateBtn" />
+
+    <EditText
+        android:id="@+id/height1"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/width1"
+        app:layout_constraintEnd_toStartOf="@+id/width1"
+        app:layout_constraintStart_toEndOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/height2"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/width2"
+        app:layout_constraintEnd_toStartOf="@+id/width2"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/height3"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/width3"
+        app:layout_constraintEnd_toStartOf="@+id/width3"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/height4"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/width4"
+        app:layout_constraintEnd_toStartOf="@+id/width4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/width4" />
+
+    <EditText
+        android:id="@+id/width1"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/width"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDoors2"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerDoors1"
+        app:layout_constraintStart_toEndOf="@+id/height1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/width2"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="51dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/width"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerDoors2"
+        app:layout_constraintStart_toEndOf="@+id/height2"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDoors1" />
+
+    <EditText
+        android:id="@+id/width3"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/width"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDoors3"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerDoors3"
+        app:layout_constraintStart_toEndOf="@+id/height3"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDoors3" />
+
+    <EditText
+        android:id="@+id/width4"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/width"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDoors4"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerDoors4"
+        app:layout_constraintStart_toEndOf="@+id/height4"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDoors4" />
+
+</android.support.constraint.ConstraintLayout>
