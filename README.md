@@ -17,7 +17,7 @@ Cada litro de tinta é capaz de pintar 5 metros quadrados.
 Não considerar teto nem piso.
 As variações de tamanho das latas de tinta são:
 
-0,5 L
-2,5 L
-3,6 L
-18 L
+- 0,5 L
+- 2,5 L
+- 3,6 L
+- 18 L
