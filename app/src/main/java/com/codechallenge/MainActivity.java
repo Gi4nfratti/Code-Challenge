@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private double multiplyArea, resultSpins;
     private Spinner spinDoors1, spinDoors2, spinDoors3, spinDoors4, spinWindows1, spinWindows2, spinWindows3,
                     spinWindows4;
-    private Integer qtd[] = new Integer[]{0,1,2,3,4,5,6,7,8,9,10};
+    private Integer qtd[] = new Integer[]{0,1,2,3,4};
     private TextView resultTxt, areaTxt;
     private String numberAsString;
     private EditText height1,height2,height3,height4,width1,width2,width3,width4;
